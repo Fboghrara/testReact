@@ -9,17 +9,14 @@ function App() {
     <div className="App">
       <Header/>
 
-
       <div style={{display:"flex", justifyContent:"center"}} >
       <div style={{display:"flex" }}>
         {/*Post container*/}
         <div style={{width:"60%"}}>
-       <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
+       <Post postName="شركة التقنية" postBody="Software Development"/>
+       <Post postName="Hello World " postBody="this is the hello world "/>
+       <Post postName="Post3" postBody="this is the body of post3"/>
+      
       
         </div>
        {/*==Post container==*/}
