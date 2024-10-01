@@ -1,10 +1,11 @@
 import "./ButtonStyle.css";
 
-export default function Button({title,children}){
-    return(
+export default function Button(){
+    return (
+        <div>
+        <button class="btn1" >click</button>
+        </div>
         
-        <button className="btn1">{title}
-        {children}
-        </button>
+       
     );
 }

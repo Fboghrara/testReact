@@ -1,3 +1,5 @@
+
+
 export default function Post({postName,postBody}){
     return(
         <>
