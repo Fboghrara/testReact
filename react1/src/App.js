@@ -4,6 +4,9 @@ import Header from './Header';
 import Post from './Post';
 import SideMenu from './SideMenu';
 import Hello from './Hello';
+import MyInput from './MyInput';
+import MyForm from './MyForm';
+
 const showCategories =true;
 function App() {
   const posts=[
@@ -34,21 +37,26 @@ function App() {
     },
   ];
 
-
   const postList=posts.map((post)=>{
     return <Post key={post.id} postName={post.postName} postBody={post.postBody}/>
   });
  
-
-  
   return (
     <div className="App">
       <Header/>
-
+      
       <div style={{display:"flex", justifyContent:"center"}} >
+        
       <div style={{display:"flex" }}>
         {/*Post container*/}
+      
         <div style={{width:"60%"}}>
+        <div style={{border:"solid 2px teal",
+        margin:"20px",
+         }}>
+        <MyInput username="UserName"/>
+        <MyInput username="Password"/>
+      </div>
          {postList}
        <Hello name="Fatma" age="25">
        <p>Job:Programmer</p>
@@ -56,6 +64,8 @@ function App() {
        <Hello name="Mohamed" age="26">
        <p>Job:Accountant</p>
        </Hello>
+
+       <MyForm />
       
         </div>
        {/*==Post container==*/}
